@@ -6,13 +6,13 @@
     <title>my first program</title>
     <style>
         body {
-            background-color: lightblue;
+            background-color: rgb(74, 71, 219);
             color: white;
             
         }
 
         h1 {
-            color: yellow;
+            color: rgb(255, 218, 11);
         }
     </style>
 </head>
@@ -21,15 +21,19 @@
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque eum mollitia pariatur assumenda, facilis similique corporis dolore dignissimos enim? Quis sint deleniti distinctio necessitatibus natus recusandae possimus id reiciendis dicta?</p>
     
     <script>
-        window.alert('hello, world!');//window popup
-        window.confirm('ok?'); // window pop up with Ok and Cancel
-        window.prompt('whats your name?'); //window popup with a prompt to insert some text
 
-        /*
-        window.alert('hello, world!'); window popup
-        window.confirm('ok?');  window pop up with Ok and Cancel
-        window.prompt('whats your name?'); window popup with a prompt to insert some text
-        */
+        var n1 = Number(window.prompt('digite um numero'))
+        var n2 = Number(window.prompt('digite outro numero'))
+
+        var soma = n1 + n2
+        window.alert('A soma dos valores é ' + String(soma))
+
+        window.alert(`a soma dos valores é de ${soma}`)
+
+        window.alert(`a soma entre ${n1} e ${n2} é de ${soma}.`)
+
+        //number + number é adição 
+        //string + string é concate
     </script>
 </body>
 </html>
