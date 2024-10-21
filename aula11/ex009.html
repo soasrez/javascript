@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nacionalidade</title>
+</head>
+<body>
+    <h1>brasileiro ou estrangeiro?</h1>
+    Em que país você nasceu? <input type="text" name="txtvalue" id="txtvalue">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular () {
+            var txtv = window.document.querySelector('input#txtvalue')
+            var res = window.document.querySelector('div#res')
+            var txt = String(txtv.value)
+            res.innerHTML = `<p> Você é ${txt}`
+            if (txtv == Brasil) {
+                res.innerHTML + `<p> Brasileiro! </p>`
+            } else {
+                res.innerHTML + `<p> Estrangeiro! </p>`
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
+
+<!--
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro?</h1>
+    Em que país você nasceu? <input type="text" name="txtvalue" id="txtvalue">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvalue')
+            var res = window.document.querySelector('div#res')
+            var txt = String(txtv.value).trim() // Converte o valor para string e remove espaços em branco
+            res.innerHTML = `<p>Você nasceu no ${txt}.</p>` // Exibe o país digitado
+            if (txt.toLowerCase() === "brasil") { // Compara com 'brasil' ignorando maiúsculas e minúsculas
+                res.innerHTML += `<p>Você é Brasileiro!</p>`
+            } else {
+                res.innerHTML += `<p>Você é Estrangeiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+-->
