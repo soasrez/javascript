@@ -16,7 +16,7 @@ function verificar() {
             genero = 'Homem'
             if (idade >= 0 && idade < 10) {
                 //CRIANCA
-                img.setAttribute('src', 'crianca-mas.jpg')
+                img.setAttribute('src', 'crianca-masc.jpg')
             } else if (idade < 21) {
                 //JOVEM
                 img.setAttribute('src', 'jovem-masc.jpg')
@@ -43,7 +43,7 @@ function verificar() {
                 img.setAttribute('img', 'idosa.jpg')
             }
         }
-        res.computedStyleMap.textAlign = 'center'
+        res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} de ${idade} anos.`
         res.appendChild(img)
     }
