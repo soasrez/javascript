@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\aula14\\ambiete.js"
+            "program": "${workspaceFolder}\\aula14\\aula14ex\\ex17\\script.js"
         }
     ]
 }
