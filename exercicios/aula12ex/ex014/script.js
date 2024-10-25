@@ -25,4 +25,4 @@ function carregar () {
 
 
 
-console.log('msg')
+console.log(msg)
