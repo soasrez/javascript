@@ -4,7 +4,7 @@ var qtd = [0,0];
 
 function adicionarItem(item){
 
-    var quantidade = document.getElementById('quantidade0' + item);
+    var quantidade = document.getElementById('quantidade' + item);
     var total = document.getElementById('total' + item);
     qtd[item] += 1;
     valorTotal[item] = Number.parseFloat(valorProduto[item]) * qtd[item];
